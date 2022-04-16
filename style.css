@@ -1,0 +1,65 @@
+
+html{
+  font-size: 10px;    
+}
+.bg-container{
+  min-height: 100vh;  
+  padding-left: 6rem !important;
+  padding-right: 6rem !important;  
+}
+
+.cal-container{
+  background-color: #E2E1E1;
+}
+
+.input-area{
+  width: 100%;
+  background-color: #F5F4F4;
+  height: 15vh;
+}
+
+textarea{
+  font-size: 2.3rem !important;
+  border-style: none;
+}
+
+.set-font-size{
+  font-size: 1.8rem;    
+}
+
+.hover-effect{
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.hover-effect:hover{
+  background-color: #FEC977 !important;
+}
+
+@media screen and (min-width: 576px)
+{
+  html{
+      font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px)
+{
+  html{
+      font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 992px)
+{
+  html{
+      font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px)
+{
+  html{
+      font-size: 18px;
+  }
+}

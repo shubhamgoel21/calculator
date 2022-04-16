@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+      <title>Calculator</title>
+
+      <link rel="stylesheet" href="style.css" />
+      
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="bg-container d-flex flex-column justify-content-center align-items-center">
+        <div class="cal-container w-100 p-3 d-flex flex-column align-items-center">
+            <h2 class="bg-dark text-white set-font-size w-100 p-4 mb-4 text-center">CALCULATOR</h2>
+            
+            <div class="input-area mb-3 w-100">
+                <textarea id="input-area" class="w-100 h-100 p-2 text-right"></textarea>
+            </div>
+            
+            <div class="btns-container container-fluid w-100 d-flex flex-column">
+                <div class="row">
+                    <div class="col-3 p-1">
+                        <div data-value="AC" class="bg-white hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">AC</div>
+                    </div>
+                    <div class="col-3 p-1">
+                        <div data-value="+/-" class="bg-white hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">+/-</div>
+                    </div>
+                    <div class="col-3 p-1">
+                        <div data-value="%" class="bg-white hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">%</div>
+                    </div>
+                    <div class="col-3 p-1">
+                        <div data-value="/" class="text-white bg-danger hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">/</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 p-1">
+                        <div data-value="7" class="bg-white hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">7</div>
+                    </div>
+                    <div class="col-3 p-1">
+                        <div data-value="8" class="bg-white hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">8</div>
+                    </div>
+                    <div class="col-3 p-1">
+                        <div data-value="9" class="bg-white hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">9</div>
+                    </div>
+                    <div class="col-3 p-1">
+                        <div data-value="*" class="text-white bg-danger hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">*</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 p-1">
+                        <div data-value="4" class="bg-white hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">4</div>
+                    </div>
+                    <div class="col-3 p-1">
+                        <div data-value="5" class="bg-white hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">5</div>
+                    </div>
+                    <div class="col-3 p-1">
+                        <div data-value="6" class="bg-white hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">6</div>
+                    </div>
+                    <div class="col-3 p-1">
+                        <div data-value="-" class="text-white bg-danger hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">-</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 p-1">
+                        <div data-value="1" class="bg-white hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">1</div>
+                    </div>
+                    <div class="col-3 p-1">
+                        <div data-value="2" class="bg-white hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">2</div>
+                    </div>
+                    <div class="col-3 p-1">
+                        <div data-value="3" class="bg-white hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">3</div>
+                    </div>
+                    <div class="col-3 p-1">
+                        <div data-value="+" class="text-white bg-danger hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">+</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 p-1">
+                        <div data-value="0" class="bg-white hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">0</div>
+                    </div>
+                    <div class="col-3 p-1">
+                        <div data-value="." class="bg-white hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">.</div>
+                    </div>
+                    <div class="col-3 p-1">
+                        <div data-value="=" class="text-white bg-danger hover-effect set-font-size w-100 h-100 d-flex flex-column align-items-center justify-content-center">=</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  </body>
+</html>
